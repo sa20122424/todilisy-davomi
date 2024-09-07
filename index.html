@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO-LIST</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+
+    <div class="todo-list">
+        <form onsubmit="todoList(event)" style="display: flex; gap: 20px;">
+            <input required placeholder="enter task" type="text">
+            <button type="submit">add+</button>
+        </form>
+        <b class="error-text"></b>
+        <br>
+        <div style="margin-top: 20px;" class="texts">
+
+
+        </div>
+    </div>
+
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

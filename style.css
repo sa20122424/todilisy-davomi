@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: inherit;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    user-select: none;
+  }
+  
+  
+  body{
+    background: rgb(34, 193, 195);
+    background: linear-gradient(
+      90deg,
+      rgba(34, 193, 195, 1) 0%,
+      rgba(48, 107, 148, 0.9136904761904762) 100%
+    );
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .todo-list {
+    position: relative;
+  }
+  
+  input {
+    background-color: transparent;
+    border: 1px solid red;
+    padding: 10px 20px;
+    width: 300px;
+    border-radius: 10px;
+    color: white;
+    outline: none;
+  }
+  
+  input::placeholder {
+    color: white;
+  }
+  
+  input:active {
+    border: 1px solid red;
+  }
+  
+  button {
+    border: none;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+  }
+  
+  .error-text {
+    color: red;
+    font-weight: 600;
+    position: absolute;
+    top: 40px;
+    left: 10px;
+  }
+  
+  
+  
+  .texts{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: black;
+    padding: 30px;
+    border-radius: 30px;
+  }
+  
+  .done{
+    text-decoration: line-through;
+    color: yellow;
+    background-color: brown;
+  }
+  
+  .texts p:hover{
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .i-p{
+    display: flex;
+    justify-content: space-between;
+  }
+  .i-p i{
+    color: red;
+  }
+  
+  
+  
+  .i-p i:hover{
+    animation: shake 0.5s ease-in-out;
+  }
+  
+  
+  
+  
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
